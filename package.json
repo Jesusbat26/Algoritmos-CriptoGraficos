@@ -1,0 +1,27 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch src/*/.ts --exec ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "cli": "ts-node src/index.ts",
+    "prng": "yarn run cli -- prng"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/yargs": "^17.0.32",
+    "nodemon": "^3.1.14",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "yargs": "^18.0.0"
+  }
+}
